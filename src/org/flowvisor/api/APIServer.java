@@ -26,7 +26,7 @@ import org.flowvisor.log.LogLevel;
 
 public class APIServer {
 
-	private static final int default_port = 8080;//ll
+	private static final int default_port = 8080;
 
 	public static int getDefaultPort() {
 		return default_port;
