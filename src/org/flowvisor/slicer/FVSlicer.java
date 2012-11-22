@@ -469,7 +469,7 @@ public class FVSlicer implements FVEventHandler, FVSendMsg, FlowvisorChangedList
 
 	}
 
-	private void handleIOEvent(FVIOEvent e) {
+	private void handleIOEvent(FVIOEvent e) {//<------------------- chiamata da handleEvent.  questa funzione che viene prende il messaggio
 		if (!this.isConnected) {
 			try {
 				if (!this.sock.finishConnect())

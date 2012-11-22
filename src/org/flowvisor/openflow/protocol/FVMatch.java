@@ -48,7 +48,7 @@ public class FVMatch extends OFMatch {
 	    
 	}
 	
-	public void setDataLayerSource(Long mac) {
+	public void setDataLayerSource(Long mac) {//setta l'indirizzo MAC nell'oggetto di tipo OF. Tutte le operazioni vengono effettuate appoggiandosi a quella classe.
 		byte macArr[] = new byte[] {
 				(byte)((mac >> 40) & 0xff),
 				(byte)((mac >> 32) & 0xff),

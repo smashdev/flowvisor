@@ -41,7 +41,7 @@ public class FVPacketOut extends OFPacketOut implements Classifiable, Slicable {
 	public void sliceFromController(FVClassifier fvClassifier, FVSlicer fvSlicer) {
 
 		// make sure that this slice can access this bufferID
-		if (! fvSlicer.isBufferIDAllowed(this.getBufferId())) {
+		if (! fvSlicer.isBufferIDAllowed(this.getBufferId())) {//controllo sul fatto che l'ID sia 'lecito'
 			FVLog.log(LogLevel.WARN, fvSlicer,
 					"EPERM buffer_id ", this.getBufferId(), " disallowed: "
 							, this.toVerboseString());
