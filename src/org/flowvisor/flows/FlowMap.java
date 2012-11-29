@@ -12,8 +12,10 @@ import org.flowvisor.openflow.protocol.FVMatch;
  *
  * FlowSpace rules are described via a strict priority list, e.g.,
  *
- * RULE 0: FlowEntry 0: if , then ACTIONS LIST 0 RULE 1: FlowEntry 1: if RULE 1,
- * then ACTIONS LIST 1 . . . RULE N: FlowEntry N: ...
+ * RULE 0: FlowEntry 0: if , then ACTIONS LIST 0 
+ * RULE 1: FlowEntry 1: if RULE 1,
+ * then ACTIONS LIST 1 . . . 
+ * RULE N: FlowEntry N: ...
  *
  * FlowEntry's are allowed to overlap in FlowSpace, but intersections are
  * resolved by priority, and a single point in flowspace only *matches* one
